@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Autoservis</title>
+  </head>
+  <body>
+    <header
+      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+      >
+        <svg class="bi me-2" width="40" height="32"></svg>
+        <img src="img\car.png" alt="car" width="40" height="32" class="m-3" />
+        <span class="fs-4">Autoservis</span>
+      </a>
+    </header>
+    <p class="m-3">
+      Autoservis Autoservis Autoservis Autoservis Autoservis Autoservis
+      Autoservis Autoservis Autoservis Autoservis Autoservis Autoservis
+      Autoservis Autoservis Autoservis Autoservis Autoservis Autoservis
+      Autoservis Autoservis
+    </p>
+
+    <img
+      src="img\cari mg.webp"
+      alt="carImg"
+      height="200"
+      id="carImg"
+      class="rounded ms-3"
+    />
+
+    <div id="container" class="m-3">
+      <input type="text" id="znacka" placeholder="znacka" />
+      <input type="text" id="model" placeholder="model" />
+      <input type="text" id="rok" placeholder="rok" />
+      <input type="text" id="najeteKm" placeholder="najeteKm" />
+      <button type="button" id="submitAdd" class="btn btn-success">
+        Add Car
+      </button>
+      <button type="button" id="submitDelete" class="btn btn-danger">
+        Delete Car
+      </button>
+
+      <button
+        type="button"
+        id="viewAll"
+        class="btn btn-info mt-5"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        View All Cars
+      </button>
+    </div>
+
+    <div
+      class="modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cars</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="cards"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
